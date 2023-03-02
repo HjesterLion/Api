@@ -12,7 +12,7 @@ function api(req,res){
 
     }else{
 
-        res.json({data: req.body,key:process.env.APP_KEY})
+        res.json({status:200, msg:"Entrada não autorizada"})
     }
 }
 
