@@ -12,7 +12,7 @@ function api(req,res){
 
     }else{
 
-        res.send('Ha')
+        res.json({data: req.body,key:process.env.APP_KEY})
     }
 }
 
