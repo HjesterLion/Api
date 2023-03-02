@@ -1,8 +1,12 @@
 function api(req,res){
     console.log(req.body)
-    res.json({
-        date:'aaa'
-    })
+    if(req.method == 'POST'){
+        res.json({
+            date:'aaa'
+        })
+
+    }
+    res.send('Ha')
 }
 
-export default api
+module.exports = api
